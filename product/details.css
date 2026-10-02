@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    background-color: #ffc0cb;
+
+    color: #111;
+
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.product-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 30px;
+
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-button {
+
+    display: block;
+
+    max-width: 1100px;
+
+    margin: 0 auto 20px auto;
+
+    color: #007185;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+.back-button:hover {
+
+    color: #c7511f;
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-details {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    display: flex;
+
+    gap: 50px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.product-left {
+
+    width: 55%;
+
+}
+
+
+/* =========================
+   MAIN IMAGE
+========================= */
+
+.main-image {
+
+    width: 100%;
+
+    height: 450px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 5px;
+
+}
+
+
+.main-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================
+   NO IMAGE
+========================= */
+
+.no-image {
+
+    width: 100%;
+
+    height: 450px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #eee;
+
+    color: #555;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================
+   MULTIPLE IMAGES
+========================= */
+
+.thumbnail-container {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.thumbnail {
+
+    width: 80px;
+
+    height: 80px;
+
+    object-fit: contain;
+
+    border: 2px solid #ddd;
+
+    padding: 5px;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+
+.thumbnail:hover {
+
+    border: 2px solid #ff9900;
+
+}
+
+
+.thumbnail.active {
+
+    border: 3px solid #ff9900;
+
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.product-info {
+
+    width: 45%;
+
+    padding: 20px;
+
+}
+
+
+.product-info h1 {
+
+    font-size: 30px;
+
+    line-height: 38px;
+
+    color: #111;
+
+    margin-bottom: 15px;
+
+}
+
+
+.category {
+
+    color: #555;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.product-info hr {
+
+    border: 0;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #111;
+
+    margin: 20px 0;
+
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+
+    font-size: 16px;
+
+    line-height: 25px;
+
+    color: #333;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.cart-button,
+.buy-button {
+
+    width: 200px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+    display: block;
+
+}
+
+
+.cart-button {
+
+    background-color: #ffd814;
+
+}
+
+
+.buy-button {
+
+    background-color: #ff9900;
+
+}
+
+
+.cart-button:hover {
+
+    background-color: #f7ca00;
+
+}
+
+
+.buy-button:hover {
+
+    background-color: #e68a00;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .product-page {
+
+        padding: 15px;
+
+    }
+
+
+    .product-details {
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+    }
+
+
+    .product-left {
+
+        width: 100%;
+
+    }
+
+
+    .product-info {
+
+        width: 100%;
+
+        padding: 10px;
+
+    }
+
+
+    .main-image,
+    .main-image img {
+
+        height: 300px;
+
+    }
+
+
+    .no-image {
+
+        height: 300px;
+
+    }
+
+
+    .product-info h1 {
+
+        font-size: 24px;
+
+        line-height: 32px;
+
+    }
+
+
+    .price {
+
+        font-size: 28px;
+
+    }
+
+
+    .cart-button,
+    .buy-button {
+
+        width: 100%;
+
+    }
+
+}

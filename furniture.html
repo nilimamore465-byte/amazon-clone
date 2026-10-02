@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+
+        <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 60px;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+/* Address */
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select {
+    background-color: #f3f3f4;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    color: black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+/* Sign In */
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Cart */
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Panel */
+.panel {
+    height: 40px;
+    background-color: palevioletred;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-all {
+    font-weight: inline;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 8.9rem;
+    font-weight: 700;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:180px;
+    height:220px;
+    object-fit:contain;
+}
+
+.card h3{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.price{
+    color:#B12704;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#FFD814;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#F7CA00;
+}
+
+</style>
+
+</head>
+<header>
+
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+f
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search Amazon">
+
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="nav-en border">
+            <i class="fa-solid fa-globe"></i>
+            English
+        </div>
+
+        <div class="nav-signin border">
+            
+            <p><a href="login.html" style="color: aliceblue;">hello sing in</a></p>
+            <p class="nav-second">Account &amp; Lists</p>
+        </div>
+
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">&amp; Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart</p>
+        </div>
+
+    </div>
+
+    <!-- Panel -->
+    <div class="panel">
+
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <div class="panel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>MX Player</p>
+            <p>Prime</p>
+            <p>Home & Kitchen</p>
+            <p>Sell</p>
+        </div>
+        <div class="panel-deals">
+            shop deals in Electronics
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<body>
+
+
+
+<div class="products">
+
+<div class="card">
+<img src="img19-jpg.jpg" alt="Dress">
+<h3>patio Furniture set</h3>
+<p class="price">₹599</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="img21-jpg.webp" alt="T-Shirt">
+<h3>Outdoor Dining Table Set</h3>
+<p class="price">₹399</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="img22-jpg.webp" alt="Shirt">
+<h3>Rattan Chair Set</h3>
+<p class="price">₹289</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="img23-jpg.webp" alt="Kurti">
+<h3>Wooden Center Table</h3>
+<p class="price">₹499</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="img24-jpg.webp" alt="Jeans">
+<h3>Modern Coffee table</h3>
+<p class="price">₹699</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="img25-jpg.webp" alt="Top">
+<h3>Wooden Storage cabinet</h3>
+<p class="price">₹349</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+</body>
+</html>
